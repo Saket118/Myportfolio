@@ -3,19 +3,13 @@
 <head>
   <meta charset="UTF-8">
 
-  <!-- SEO TITLE -->
-  <title>Saket Shrivastava | Html Web Developer Portfolio</title>
-
-  <!-- SEO DESCRIPTION -->
-  <meta name="description" content="Portfolio of Saket Shrivastava, a html web developer specializing in responsive websites, Bootstrap UI, and modern web applications.">
-
+  <!-- SEO -->
+  <title>Saket Shrivastava | HTML & PHP Web Developer</title>
+  <meta name="description" content="Portfolio of Saket Shrivastava, HTML & PHP Web Developer with 2+ years of experience.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -26,165 +20,174 @@
 
 <body>
 
-<!-- ================= SEO FRIENDLY NAVBAR ================= -->
+<!-- ================= NAVBAR ================= -->
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light px-3" role="navigation" aria-label="Main Navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light px-3">
     <div class="container-fluid">
 
-      <!-- LOGO / BRAND -->
-      <a class="navbar-brand fw-bold" href="index.html" title="Saket Shrivastava Portfolio">
-        Saket Shrivastava
-      </a>
+      <a class="navbar-brand fw-bold" href="#home">Saket Shrivastava</a>
 
-      <!-- MOBILE TOGGLE -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#primaryNavbar"
-        aria-controls="primaryNavbar"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- NAV LINKS -->
       <div class="collapse navbar-collapse" id="primaryNavbar">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html" title="Home - Saket Shrivastava Portfolio">
-              Home
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="aboutPage.html" title="About Saket Shrivastava">
-              About
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="projectPage.html" title="Projects by Saket Shrivastava">
-              Projects
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="contactPage.html" title="Contact Saket Shrivastava">
-              Contact
-            </a>
-          </li>
-
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contactPage.html">Contact</a></li>
         </ul>
 
-        <!-- DARK MODE TOGGLE (NOT INDEXED) -->
-        <div class="form-check form-switch text-nowrap ms-lg-3">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            id="themeToggle"
-            aria-label="Toggle dark mode"
-          >
-          <label class="form-check-label ms-2" for="themeToggle">
-            Dark Mode
-          </label>
+        <div class="form-check form-switch ms-lg-3">
+          <input class="form-check-input" type="checkbox" id="themeToggle">
+          <label class="form-check-label ms-2">Dark Mode</label>
         </div>
-
       </div>
     </div>
   </nav>
 </header>
 
-
 <main>
 
 <!-- ================= HERO ================= -->
-<header class="hero-section" id="home">
+<section class="hero-section" id="home">
   <div class="container">
     <div class="row align-items-center">
 
-      <!-- TEXT -->
       <div class="col-md-7">
         <span class="hero-badge">👋 Hello, I’m</span>
 
-        <!-- ONLY ONE H1 (VERY IMPORTANT FOR SEO) -->
         <h1 class="hero-title">
-          Saket <span>Shrivastava</span> – html Web Developer
+          Saket <span>Shrivastava</span> – Web Developer
         </h1>
 
         <p class="hero-subtitle">
-          I build modern, responsive and SEO-friendly web applications
-          using HTML, CSS, Bootstrap, JavaScript and html.
+          HTML & PHP Web Developer with 2+ years of experience building
+          scalable, responsive, real-world web applications.
         </p>
 
         <div class="hero-buttons">
-          <a href="#projects" class="btn btn-primary px-4 py-2">
-            View Projects
-          </a>
-          <a href="#contact" class="btn btn-outline-secondary px-4 py-2 ms-3">
-            Contact Me
-          </a>
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="contactPage.html" class="btn btn-outline-secondary ms-3">Contact Me</a>
         </div>
       </div>
 
-      <!-- IMAGE -->
       <div class="col-md-5 text-center">
         <div class="hero-image">
-          <img
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&fit=crop"
-            alt="Saket Shrivastava html Web Developer"
-            loading="lazy"
-          >
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500"
+               alt="Saket Shrivastava">
         </div>
       </div>
 
     </div>
   </div>
-</header>
+</section>
 
 <!-- ================= ABOUT ================= -->
 <section class="about-section" id="about">
   <div class="container">
-
     <div class="text-center mb-5">
       <span class="section-badge">About Me</span>
       <h2 class="section-title">Who I Am</h2>
     </div>
 
     <div class="row align-items-center">
-
       <div class="col-md-5 text-center">
-        <img
-          src="https://images.unsplash.com/photo-1502767089025-6572583495b4?w=500"
-          class="about-img"
-          alt="About Saket Shrivastava Web Developer"
-          loading="lazy"
-        >
+        <img src="https://images.unsplash.com/photo-1502767089025-6572583495b4?w=400"
+             class="about-img" alt="About">
       </div>
 
       <div class="col-md-7">
         <div class="about-content">
-
           <p class="about-text">
-            I am a passionate html web developer with experience in building
-            responsive websites, admin dashboards, and modern user interfaces.
-            I focus on performance, accessibility, and clean code.
+            I am a dedicated HTML & PHP Web Developer with 2+ years of hands-on
+            experience in building production-ready websites and tools.
           </p>
 
-          <div class="about-skills" aria-label="Skills">
+          <div class="about-skills">
             <span>HTML</span>
             <span>CSS</span>
             <span>Bootstrap</span>
             <span>JavaScript</span>
-            <span>html</span>
+            <span>PHP</span>
             <span>MySQL</span>
           </div>
-
         </div>
       </div>
+    </div>
+  </div>
+</section>
 
+<!-- ================= EDUCATION ================= -->
+<section class="about-section" id="education">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-9">
+
+        <div class="edu-exp-card">
+          <span class="section-badge">Education</span>
+          <h2 class="section-title mb-4">Academic Qualification</h2>
+
+          <ul class="list-group list-group-flush edu-exp-list">
+            <li class="list-group-item">
+              <strong>Degree:</strong> Bachelor’s / Diploma in Computer Science
+            </li>
+            <li class="list-group-item">
+              <strong>Duration:</strong> 2021 – 2024
+            </li>
+            <li class="list-group-item">
+              <strong>Core Subjects:</strong> Programming, Databases, Web Technologies
+            </li>
+            <li class="list-group-item">
+              <strong>Skills Gained:</strong> HTML, CSS, PHP, MySQL, Bootstrap
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="projects-section" id="experience">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+
+        <div class="edu-exp-card">
+          <span class="section-badge">Experience</span>
+          <h2 class="section-title mb-4">2+ Years Professional Experience</h2>
+
+          <ul class="list-group list-group-flush edu-exp-list">
+            <li class="list-group-item">
+              <strong>Total Experience:</strong> 2+ Years
+            </li>
+            <li class="list-group-item">
+              Worked as <strong>HTML & PHP Web Developer</strong>
+            </li>
+            <li class="list-group-item">
+              Developed <strong>E-commerce Website</strong>
+            </li>
+            <li class="list-group-item">
+              Built <strong>Toolkit-based Website</strong>
+            </li>
+            <li class="list-group-item">
+              Created <strong>Journal Website</strong>
+            </li>
+            <li class="list-group-item">
+              Responsibilities: UI, backend logic, database handling,
+              bug fixing & optimization
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
@@ -192,152 +195,71 @@
 <!-- ================= PROJECTS ================= -->
 <section class="projects-section" id="projects">
   <div class="container">
-
     <div class="text-center mb-5">
       <span class="section-badge">Projects</span>
-      <h2 class="section-title">My Work</h2>
+      <h2 class="section-title">My Projects</h2>
     </div>
 
     <div class="row g-4">
-
-      <article class="col-md-4">
+      <div class="col-md-4">
         <div class="project-card">
-
-          <img
-            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800"
-            class="project-img"
-            alt="Portfolio Website Project by Saket Shrivastava"
-            loading="lazy"
-          >
-
-          <h3 class="project-title">Portfolio Website</h3>
-
-          <p class="project-desc">
-            A modern personal portfolio website with dark mode,
-            responsive design, and SEO-friendly structure.
-          </p>
-
-          <div class="project-tags" aria-label="Technologies used">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>Bootstrap</span>
-          </div>
-
+          <img src="https://via.placeholder.com/400x250" class="project-img">
+          <h3 class="project-title">E-commerce Website</h3>
+          <p class="project-desc">Complete e-commerce solution.</p>
+          <div class="project-tags"><span>PHP</span><span>MySQL</span></div>
         </div>
-      </article>
+      </div>
 
-    </div>
-  </div>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section class="contact-section" id="contact">
-  <div class="container">
-
-    <div class="text-center mb-5">
-      <span class="section-badge">Contact</span>
-      <h2 class="section-title">Get In Touch</h2>
-    </div>
-
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-
-        <div class="contact-card">
-
-          <form method="post" aria-label="Contact form">
-
-            <label class="visually-hidden" for="name">Name</label>
-            <input
-              id="name"
-              name="name"
-              class="form-control mb-3"
-              placeholder="Your Name"
-              required
-            >
-
-            <label class="visually-hidden" for="email">Email</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              class="form-control mb-3"
-              placeholder="Your Email"
-              required
-            >
-
-            <label class="visually-hidden" for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              class="form-control mb-4"
-              rows="5"
-              placeholder="Message"
-              required
-            ></textarea>
-
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary px-5 py-2">
-                Send Message
-              </button>
-            </div>
-
-          </form>
-
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x250" class="project-img">
+          <h3 class="project-title">Toolkit Website</h3>
+          <p class="project-desc">Multiple utilities platform.</p>
+          <div class="project-tags"><span>HTML</span><span>JS</span></div>
         </div>
+      </div>
 
+      <div class="col-md-4">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x250" class="project-img">
+          <h3 class="project-title">Journal Website</h3>
+          <p class="project-desc">Article & category management.</p>
+          <div class="project-tags"><span>PHP</span><span>Bootstrap</span></div>
+        </div>
       </div>
     </div>
-
   </div>
 </section>
 
 </main>
 
-
-
+<!-- ================= FOOTER ================= -->
 <footer class="portfolio-footer">
   <div class="container text-center">
-
     <h4 class="footer-name">Saket Shrivastava</h4>
-    <p class="footer-role">Web Developer | Frontend Developer</p>
-
-    <div class="footer-links">
-       <a  href="#home" class="text-decoration-none">Home</a>
-    <a href="#about" class="text-decoration-none">About</a>
-    <a href="#projects" class="text-decoration-none">Projects</a>
-    <a href="#contact" class="text-decoration-none">Contact</a>
-    </div>
-
-    <p class="footer-copy">
-      © 2026 Saket. All rights reserved.
-    </p>
-
+    <p class="footer-role">HTML & PHP Web Developer</p>
+    <p class="footer-copy">© 2026 All Rights Reserved</p>
   </div>
 </footer>
 
-
-
+<!-- Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- DARK MODE SCRIPT -->
+<!-- Dark Mode -->
 <script>
-  const toggle = document.getElementById("themeToggle");
-
-  // Load saved theme
-  if (localStorage.getItem("theme") === "dark") {
-    document.body.classList.add("dark-mode");
-    toggle.checked = true;
-  }
-
-  toggle.addEventListener("change", () => {
-    document.body.classList.toggle("dark-mode");
-
-    if (document.body.classList.contains("dark-mode")) {
-      localStorage.setItem("theme", "dark");
-    } else {
-      localStorage.setItem("theme", "light");
-    }
-  });
+const toggle = document.getElementById("themeToggle");
+if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark-mode");
+  toggle.checked = true;
+}
+toggle.addEventListener("change", () => {
+  document.body.classList.toggle("dark-mode");
+  localStorage.setItem(
+    "theme",
+    document.body.classList.contains("dark-mode") ? "dark" : "light"
+  );
+});
 </script>
+
 </body>
 </html>
